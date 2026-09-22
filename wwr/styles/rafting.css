@@ -16,7 +16,11 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #ffffff;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 header,
@@ -30,13 +34,13 @@ header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    background-color: var(--primary-color);
     padding: 10px 20px;
+    background-color: var(--primary-color);
+    border-bottom: 5px solid var(--secondary-color);
 }
 
 header img {
     width: 130px;
-    height: auto;
 }
 
 nav {
@@ -83,6 +87,9 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+p {
     line-height: 1.6;
 }
 
@@ -94,7 +101,6 @@ article {
 .hero > img {
     display: block;
     width: 100%;
-    height: auto;
 }
 
 .hero article {
@@ -102,8 +108,9 @@ article {
     bottom: 30px;
     left: 30px;
     right: 30px;
-    background-color: rgb(255 255 255 / 85%);
     padding: 20px;
+    background-color: rgb(255 255 255 / 85%);
+    border-top: 5px solid var(--secondary-color);
 }
 
 .hero article img {
@@ -121,10 +128,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
-    color: #ffffff;
-    padding: 20px;
     margin-top: 30px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-top: 5px solid var(--secondary-color);
+    color: #ffffff;
 }
 
 footer p {
