@@ -155,3 +155,49 @@ footer p {
     width: 32px;
     height: 32px;
 }
+
+/* W04 History Layout */
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 180px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.history-content p {
+    margin: 0;
+}
+
+.history-content img {
+    width: 180px;
+    height: 130px;
+    object-fit: cover;
+}
+
+/* W04 Adventure Layout */
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.adventure-grid figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+.adventure-grid figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.history h2 {
+    text-align: center;
+}
