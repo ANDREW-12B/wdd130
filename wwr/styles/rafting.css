@@ -157,6 +157,7 @@ footer p {
 }
 
 /* W04 History Layout */
+
 .history-content {
     display: grid;
     grid-template-columns: 1fr 180px 1fr;
@@ -175,6 +176,7 @@ footer p {
 }
 
 /* W04 Adventure Layout */
+
 .adventure-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -200,4 +202,154 @@ footer p {
 
 .history h2 {
     text-align: center;
+}
+
+/* Contact Us Page */
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-header h1 {
+    position: static;
+    width: auto;
+    padding: 0;
+    margin: 0 0 0.5rem;
+    opacity: 1;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.company-info h2 {
+    margin-bottom: 0.5rem;
+}
+
+.company-info address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.company-info a {
+    color: var(--accent1-color);
+    text-decoration: none;
+}
+
+.company-info a:hover {
+    color: var(--primary-color);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.contact-map h2,
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-map iframe {
+    width: 100%;
+    min-height: 350px;
+    border: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    font: inherit;
+}
+
+.contact-form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid #999;
+    padding: 1rem;
+}
+
+.contact-form legend {
+    font-weight: bold;
+}
+
+.contact-form fieldset label {
+    font-weight: normal;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.contact-form button {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent1-color);
+}
+
+.employees {
+    text-align: center;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.employee-grid figure {
+    margin: 0;
+}
+
+.employee-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.employee-grid figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Responsive Contact Us Layout */
+
+@media screen and (max-width: 700px) {
+
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-grid {
+        grid-template-columns: 1fr;
+    }
 }
